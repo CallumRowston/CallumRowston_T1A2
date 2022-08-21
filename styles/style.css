@@ -20,7 +20,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     padding: 1rem;
     background: #ffffff;
     font-family: 'Lato', sans-serif;
@@ -57,7 +57,7 @@ nav a:hover {
 } 
 
 .active-page {
-    text-decoration: underline #FAD4D4 3px;
+    text-decoration: underline #EF9F9F 3px;
 }
 
 /* Main Content */
@@ -144,34 +144,6 @@ footer {
     padding: 1rem;
 }
 
-/* Tablet Sizing */
-@media screen and (min-width: 610px) and (max-width: 999px) {
-    header {
-        flex-direction: row;
-        padding: auto 2rem;
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-}
-
-/* Desktop Sizing */
-@media screen and (min-width: 1000px) {
-    header {
-        flex-direction: row;
-        padding: auto 2rem;
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-
-    .social-media img {
-        width: 3vw;
-    }
-}
-
 /* About Page */
 .page-title-text {
     font-family: 'Lato', sans-serif;
@@ -204,4 +176,75 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     padding: 1rem;
+}
+
+/* Projects Page */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff;
+}
+
+.project-card {
+    padding: 0.8rem 1.8rem;
+    margin: 1rem;
+    background: #ff5951;
+}
+
+/* Blog Main Page */
+.blog-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff;
+}
+
+.blog-card {
+    display: block;
+    text-align: center;
+    padding: 1rem 1.2rem 1rem;
+    margin: 0.8rem;
+    background: #ff5951;
+}
+
+.blog-card a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+/* Tablet Sizing */
+@media screen and (min-width: 610px) and (max-width: 999px) {
+    header {
+        flex-direction: row;
+        padding: auto 2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* Desktop Sizing */
+@media screen and (min-width: 1000px) {
+    header {
+        flex-direction: row;
+        padding: auto 2rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .social-media img {
+        width: 3vw;
+    }
+    /* Projects Page */
+    .project-container {
+        flex-direction: row;
+    }
 }

@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    /* margin: 0 3vw; */
 }
 
 /* Header */
@@ -23,7 +24,7 @@ header {
     padding: 1rem;
     background: #ffffff;
     font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 header img {
@@ -46,7 +47,7 @@ header li {
 
 header a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #000000;
 }
 
@@ -54,6 +55,10 @@ nav a:hover {
     border-radius: 50%;
     background: #66DE93;
 } 
+
+.active-page {
+    text-decoration: underline #FAD4D4 3px;
+}
 
 /* Main Content */
 main {
@@ -64,6 +69,7 @@ main {
     color: #1c1b20;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
+    padding: 1rem;
 }
 
 main div {
@@ -72,7 +78,7 @@ main div {
 }
 
 h1 {
-    font-size: clamp(6rem, 15vw, 10rem);
+    font-size: clamp(6rem, 15vw, 8rem);
 }
 
 h2 {
@@ -93,25 +99,21 @@ h3 {
 }
 
 .profile-pic-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: #ffffff;
     padding: 2rem;
 }
 
-main div img {
+.profile-pic-container img {
     border-radius: 50%;
     border: 2px solid #66DE93;
+    width: 20vw;
+    min-width: 204px;
 }
 
 /* Social Links */
-/* .social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.25rem 2rem;
-    background: #ff5951;
-} */
 
 section {
     display: flex;
@@ -143,7 +145,7 @@ footer {
 }
 
 /* Tablet Sizing */
-@media screen and (min-width: 610px) and (max-width: 899px) {
+@media screen and (min-width: 610px) and (max-width: 999px) {
     header {
         flex-direction: row;
         padding: auto 2rem;
@@ -155,7 +157,7 @@ footer {
 }
 
 /* Desktop Sizing */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     header {
         flex-direction: row;
         padding: auto 2rem;
@@ -168,4 +170,38 @@ footer {
     .social-media img {
         width: 3vw;
     }
+}
+
+/* About Page */
+.page-title-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about-container {
+    margin: 1rem 3rem;
+    text-transform:initial
+}
+
+.about-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Contact Page */
+.contact-container {
+    margin: 1rem 3rem;
+    text-transform:initial
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.contact-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
 }

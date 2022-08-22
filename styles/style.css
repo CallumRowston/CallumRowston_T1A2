@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin: 0 3vw; */
 }
 
@@ -66,8 +66,10 @@ header a {
 }
 
 nav a:hover {
-    border-radius: 50%;
-    background: #66DE93;
+    /* border-radius: 50%;
+    background: #66DE93; */
+    color: #EF9F9F;
+
 } 
 
 .active-page {
@@ -107,8 +109,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
-    background: #ff5951;
     padding: 2rem;
 }
 
@@ -133,14 +133,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    background: #ff5951;
-}
-
-section div div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* padding: 1rem; */
+    background: #ffffff;
 }
 
 .social-media a {
@@ -157,7 +151,9 @@ section div div {
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
@@ -273,14 +269,27 @@ footer {
     header {
         flex-direction: row;
         padding: auto 2rem;
+        height: 20%;
     }
-
     nav ul {
         flex-direction: row;
     }
-
+    main {
+        flex-flow: row ;
+        padding: 0;
+        height: 70%;
+    }
+    .main-text-container {
+        width: 50vw;
+    }
+    .profile-pic-container {
+        width: 50vw;
+    }
     .social-media img {
         width: 3vw;
+    }
+    footer {
+        height: 10%;
     }
     /* Projects Page */
     .project-container {

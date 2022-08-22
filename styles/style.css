@@ -9,6 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background: #09244a;
     /* height: 100vh; */
     /* margin: 0 3vw; */
 }
@@ -36,7 +37,8 @@ header {
     align-items: center;
     /* text-decoration: none; */
     padding: 1rem;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #09244a;
     font-family: 'Lato', sans-serif;
     /* text-transform: uppercase; */
 }
@@ -62,17 +64,17 @@ header li {
 header a {
     text-decoration: none;
     font-size: 1.8rem;
-    color: #000000;
+    color: #ffffff;
 }
 
 nav a:hover {
     display: inline-block;
     transform: scale(1.3);
-    color: #EF9F9F;
+    color: #f53c53;
 } 
 
 .active-page {
-    text-decoration: underline #EF9F9F 3px;
+    text-decoration: underline #f53c53 3px;
 }
 
 /* Main Content */
@@ -80,8 +82,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #ff5951;
-    color: #1c1b20;
+    /* background: #ff5951; */
+    background: #021d42;
+    color: white;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     padding: 1rem;
@@ -93,15 +96,22 @@ main div {
 }
 
 h1 {
-    font-size: clamp(6rem, 15vw, 8rem);
+    font-size: clamp(8rem, 15vw, 10rem);
 }
 
 h2 {
-    font-size: clamp(3rem, 3vw, 6rem);
+    font-size: clamp(5rem, 3vw, 7.5rem);
+    text-align: left;
 }
 
 h3 {
-    font-size: clamp(2rem, 1vw, 4rem);
+    font-size: clamp(4rem, 1vw, 6rem);
+    text-align: left;
+}
+
+em {
+    font-style: normal;
+    color: #f53c53;
 }
 
 .main-text-container {
@@ -115,13 +125,14 @@ h3 {
     display: flex;
     justify-content: center;
     width: 100vw;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background: #122649;
     padding: 2rem;
 }
 
 .profile-pic-container img {
     border-radius: 50%;
-    border: 3px solid #ff5951;
+    border: 3px solid #f53c53;
     width: 20vw;
     min-width: 204px;
 }
@@ -133,7 +144,8 @@ section {
     flex-direction: column;
     align-items: center;
     /* padding: 1rem; */
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #122649;
 }
 
 .social-media a {
@@ -144,7 +156,7 @@ section {
 .fa-brands {
     font-family: "Font Awesome 6 Brands";
     font-size: 3rem;
-    color: #1c1b20;
+    color: #ffffff;
 }
 
 .fa-brands:hover {
@@ -172,11 +184,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #09244a;
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
 }
 
+footer p {
+    color: #ffffff;
+}
 /* About Page */
 .page-title-text {
     font-family: 'Lato', sans-serif;
@@ -197,7 +213,7 @@ footer {
 /* Contact Page */
 .contact-container {
     margin: 1rem 3rem;
-    text-transform:initial
+    text-transform: initial;
 }
 
 .contact-container h1 {
@@ -224,11 +240,6 @@ footer {
     padding: 0.8rem 1.8rem;
     margin: 1rem;
     background: #ff5951;
-}
-
-.project-card:hover {
-    animation: shake 0.7s;
-    animation-iteration-count: infinite; 
 }
 
 /* Blog Main Page */

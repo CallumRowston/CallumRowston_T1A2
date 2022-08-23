@@ -10,8 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     background: #09244a;
-    /* height: 100vh; */
-    /* margin: 0 3vw; */
 }
 
 @keyframes shake {
@@ -31,8 +29,7 @@ body {
 /* Header */
 header {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     /* text-decoration: none; */
@@ -41,6 +38,7 @@ header {
     background: #09244a;
     font-family: 'Lato', sans-serif;
     /* text-transform: uppercase; */
+    margin: 1% 0;
 }
 
 header img {
@@ -278,7 +276,7 @@ footer p {
 
 
 /* Projects Page */
-.project-container {
+.project-page-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,17 +295,44 @@ footer p {
     text-transform: none;
 }
 .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0.8rem 1.8rem;
     margin: 1rem;
     background: #122649;
+    overflow: auto;
 }
-
+.project-card h2{
+    text-align: center;
+    font-size: clamp(2.5rem, 3.9vw + 0.9rem, 3.2rem);
+    margin: auto 0 0.8rem;
+}
+.project-card img {
+    max-width: 100%;
+}
+.project-card p {
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 1rem 0;
+}
+.project-card a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f53c53;
+    text-align: left;
+    padding: 1rem;
+}
+.project-card a:hover {
+    font-weight: bold;
+}
 /* Blog Main Page */
+
 .blog-card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-evenly;
     background: #021d42;
     text-transform: none;
@@ -334,10 +359,12 @@ footer p {
 }
 .blog-card h2 {
     font-size: 2rem;
+    text-align: center;
 }
 .blog-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
+
 }
 
 .blog-card:hover {
@@ -351,15 +378,22 @@ footer p {
         flex-direction: row;
         padding: auto 2rem;
     }
-
     nav ul {
         flex-direction: row;
     }
     .profile-pic-container img {
         width: 35%;
     }
+    /* Projects Page */
+    .project-card-container {
+        flex-direction: row;
+    }
+    .project-card {
+        width: 40vw
+    }
     .blog-card {
-        width: 60%;
+        width: 44vw;
+        height: 30%;
     }
 }
 
@@ -410,13 +444,15 @@ footer p {
         padding-right: 7vw;
     }
     /* Projects Page */
-    .project-container {
+    .project-card-container {
         flex-direction: row;
     }
+    .project-card {
+        width: 30vw
+    }
+    /* Blogs Page */
     .blog-card {
         width: 30%;
     }
-    .blog-card h2 {
-        text-align: center;
-    }
+
 }

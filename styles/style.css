@@ -213,9 +213,11 @@ footer p {
     font-family: 'Lato', sans-serif;
     font-size: 2.5rem;
     text-align: center;
+    text-transform: none;
 }
 .page-subtitle-text {
     font-size: clamp(2.5rem, 3.9vw + 0.9rem, 3.2rem);
+    text-align: center;
 }
 .about-container {
     /* margin: 1rem 3rem; */
@@ -270,7 +272,7 @@ footer p {
 }
 
  .contact-container p {
-    font-size: clamp(0.8rem, 4.2vw + 0.1rem, 1.4rem);
+    font-size: clamp(1.1rem, 3vw + 0.3rem, 1.6rem);
     padding: 1rem;
 }
 
@@ -285,10 +287,15 @@ footer p {
     text-transform: none;
 }
 
-.project-container div {
-    display: block;
+.project-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #021d42;
+    text-transform: none;
 }
-
 .project-card {
     padding: 0.8rem 1.8rem;
     margin: 1rem;
@@ -307,32 +314,33 @@ footer p {
 }
 
 .blog-card {
-    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 1rem ;
     border: 0.2rem solid #122649;
     margin: 0.8rem;
     background: #122649;
+    /* min-height: 417px; */
 }
 
 .blog-card a {
     text-decoration: none;
-    font-size: 1.8rem;
     color: #ffffff;
-    width: 100%;
+
 }
-.blog-card img {
-    object-fit: cover;
+.blog-card div {
+    object-fit: contain;
 }
 .blog-card h2 {
     font-size: 2rem;
 }
+.blog-card p {
+    font-size: 1rem;
+    text-align: center;
+}
 
 .blog-card:hover {
-    display: inline-block;
     transform: scale(1.02);
     border-color:#f53c53;
 }
@@ -398,12 +406,17 @@ footer p {
     .about-container {
         flex-direction: row;
     }
-
+    .about-container article {
+        padding-right: 7vw;
+    }
     /* Projects Page */
     .project-container {
         flex-direction: row;
     }
     .blog-card {
         width: 30%;
+    }
+    .blog-card h2 {
+        text-align: center;
     }
 }

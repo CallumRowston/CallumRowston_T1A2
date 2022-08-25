@@ -29,7 +29,8 @@ a {
 
 /* Text Styles */
 h1 {
-    font-size: clamp(4rem, 12vw + 1.6rem, 7.8rem);
+    text-align: center;
+    font-size: clamp(4.5rem, 4.9vw + 1.3rem, 5.2rem);
     padding: 3vh 0;
 }
 
@@ -50,7 +51,7 @@ em {
 
 p {
     font-family: var(--font-primary);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--color-text);
 }
 
@@ -65,7 +66,7 @@ a {
     color: var(--color-text);
     text-align: left;
     padding: 0.7rem 1rem;
-    border: 1px solid var(--color-accent);
+    border: 2px solid var(--color-accent);
 }
 
 .accent-button:hover {
@@ -127,20 +128,21 @@ main {
 }
 
 .main-text-container {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-main div {
-    display: flex;
-    justify-content: center;
-}
-
-.main-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
     padding: 2rem;
+}
+
+#index-big-title {
+    font-size: clamp(4rem, 12vw + 1.6rem, 7.8rem);
+}
+
+
+#profile-accounts-container {
+    background: var(--color-secondary);
 }
 
 .profile-pic-container {
@@ -158,10 +160,6 @@ main div {
 }
 
 /* Account Links */
-.profile-social-container {
-    background: var(--color-secondary);
-}
-
 .account-links {
     display: flex;
     align-items: center;
@@ -231,17 +229,10 @@ footer {
 
 footer p {
     padding: 2rem;
-    
-}
-/* About Page */
-.page-title-text {
-    font-family: var(--font-title);
-    font-size: 2.5rem;
-    text-align: center;
-    text-transform: none;
 }
 
-.page-subtitle-text {
+/* About Page */
+.about-subtitle {
     font-size: clamp(2.5rem, 3.9vw + 0.9rem, 3.2rem);
     text-align: center;
 }
@@ -253,20 +244,7 @@ footer p {
 .about-container article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.about-container section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-container div {
-    /* flex-direction: column;
-    align-items: center;
-    margin: 0; */
 }
 
 .profile-pic-about {
@@ -280,20 +258,12 @@ footer p {
     padding: 1rem 2rem;
 }
 
-.about-container .profile-pic-container {
-    background: var(--color-primary);
-}
-
 /* Contact Page */
 .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: none;
-}
-
-.page-title-text {
-    font-size: clamp(4.5rem, 4.9vw + 1.3rem, 5.2rem);
 }
 
 .contact-container p,
@@ -323,7 +293,6 @@ footer p {
 }
 
 .project-card h2 {
-    /* text-align: center; */
     font-size: clamp(2.5rem, 3.9vw + 0.9rem, 3.2rem);
     padding: 0.5rem;
     margin: auto 0 0.8rem;
@@ -358,6 +327,8 @@ footer p {
 }
 
 .blog-card div {
+    display: flex;
+    justify-content: center;
     max-height: 35vh;
 }
 
@@ -381,6 +352,11 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 1.2rem;
+}
+
+.blog-image-container {
+    display: flex;
+    justify-content: center;
 }
 
 .blog-image-container img{
@@ -409,11 +385,17 @@ footer p {
     header {
         padding: auto 2rem;
     }
+
     nav li {
         margin: 0 1.5rem;
     }
+
     nav ul {
         flex-direction: row;
+    }
+
+    .account-links a {
+        padding: 1.4rem 1.8rem;
     }
 
     /* Projects Page */
@@ -440,10 +422,6 @@ footer p {
 
 /* Desktop Sizing */
 @media screen and (min-width: 1200px) {
-    p {
-        
-    }
-
     /* Header and Navigation*/
     header {
         flex-direction: row;
@@ -469,6 +447,10 @@ footer p {
         padding: 0;
     }
 
+    .account-links a {
+        padding: 1.4rem 1.8rem;
+    }
+
     /* Main Content */
     .main-text-container {
         width: 50vw;
@@ -480,7 +462,7 @@ footer p {
 
     .profile-pic-container {
         width: 50vw;
-        margin: 7vh 0 0;
+        margin-top: 4.3rem;
     }
 
     /* Profile Image*/
@@ -513,8 +495,8 @@ footer p {
 
     /* Contact Page */
     .contact-container {
-        justify-content: center;
-        min-height: 70vh
+        justify-content: space-between;
+        min-height: 70vh;
     }
 
     /* Projects Page */
@@ -545,10 +527,13 @@ footer p {
 
     .blog-image-container img {
         width: 90%;
-        max-width: none;
+        /* max-width: none; */
     }
 
     .blog-text-container {
         width: 66%;
+    }
+    .blog-text-container h1 {
+        text-align: left;
     }
 }

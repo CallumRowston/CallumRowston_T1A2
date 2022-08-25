@@ -78,8 +78,8 @@ header {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
     font-family: var(--font-title);
+    padding: 0.8rem;
     margin: 0.8rem 0;
 }
 
@@ -348,17 +348,22 @@ footer p {
     margin: 1rem;
     background: var(--color-secondary);
     border: 2px solid;
+    max-width: 85%;
 }
 
 .blog-card h2{
     text-align: center;
-    font-size: clamp(2.5rem, 3.0vw + 0.9rem, 3rem);
-    padding: 1rem;
-    margin: auto 0 0.8rem;
+    font-size: clamp(2rem, 3.0vw + 0.9rem, 3rem);
+    padding: 1rem 1rem 0;
+}
+
+.blog-card div {
+    max-height: 35vh;
 }
 
 .blog-card img {
     width: 100%;
+    object-fit: cover;
 }
 
 .blog-card p {

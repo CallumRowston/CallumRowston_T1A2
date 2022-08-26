@@ -28,8 +28,37 @@ The website pages include:
 
 ![Site map](docs/sitemap.png)
 
-## Screenshots
+## Wireframes and Screenshots
 
+### Index Page
+
+![index wireframe](docs/index-wireframe.png)
+![index screenshot](docs/index-screenshot.png)
+
+### About Page
+
+![about wireframe](docs/about-wireframe.png)
+![about screenshot](docs/about-screenshot.png)
+
+### Contact Page
+
+![contact wireframe](docs/contact-wireframe.png)
+![contact screenshot](docs/contact-screenshot.png)
+
+### Projects Page
+
+![projects wireframe](docs/projects-wireframe.png)
+![projects screenshot](docs/projects-screenshot.png)
+
+### Blog Main Page
+
+![blog main wireframe](docs/blog-main-wireframe.png)
+![blog main screenshot](docs/blog-main-screenshot.png)
+
+### Blog Individual Page
+
+![blog page wireframe](docs/blog-page-wireframe.png)
+![blog page screenshot](docs/blog-page-screenshot.png)
 
 ## Tech Stack
 

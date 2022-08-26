@@ -26,7 +26,7 @@ The website pages include:
 
 ## Sitemap
 
-!(docs/sitemap.png)
+![Site map](docs/sitemap.png)
 
 ## Screenshots
 

@@ -10,7 +10,7 @@ This portfolio website is designed to exhibit my background, contact information
 
 ## Target Audience
 
-The website aims to attract potential employers and recruiters in the area of software development.
+The website aims to attract potential employers and recruiters in the area of software development and give them information about my skills and history.
 
 ## Funtionality and Features
 

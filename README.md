@@ -22,7 +22,8 @@ The website pages include:
 - About Page - Provides information about me; includiung my background, work and study history and my personal interests. Also links to my resume.
 - Contact Page - Provides multiple avenues to contact me; email, phone and social media.
 - Projects Page - Designed to show my capabilities as a software developer by exhibiting projects I have worked on.
-- Blog Page - Gives an overview of current blog posts and links to those full blog posts.
+- Blog Main Page - Gives an overview of current blog posts and links to those full blog posts.
+- Blog Individual Page - Contains a blog post with placeholder image and text. 
 
 ## Sitemap
 

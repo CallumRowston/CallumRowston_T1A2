@@ -4,7 +4,7 @@
 
 # [Github Repo](https://github.com/CallumRowston/Portfolio-Website-Assessment)
 
-# [Presentation - Youtube] (https://youtu.be/9Gcpqo6MJDU)
+# [Presentation - Youtube](https://youtu.be/9Gcpqo6MJDU)
 
 ## Purpose
 

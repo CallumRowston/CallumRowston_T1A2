@@ -1,6 +1,6 @@
 # CallumRowston_T1A2 Portfolio Website Documentation
 
-# [Website](https://glowing-cucurucho-1e6241.netlify.app/index.html)
+# [Website](https://callumrowston.netlify.app/)
 
 # [Github Repo](https://github.com/CallumRowston/Portfolio-Website-Assessment)
 

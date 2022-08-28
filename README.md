@@ -16,7 +16,7 @@ The website aims to attract potential employers and recruiters in the area of so
 
 ## Funtionality and Features
 
-The website is designed to be fully responsive to varying screen sizes. It uses semantic HTML together with thematic colour and animations to convey information clearly and concisely and create an accessible experience.
+The website is designed to be fully responsive to varying screen sizes. It uses semantic HTML together with thematic colour and animations to convey information clearly and concisely and create an accessible experience. The website is navigated by a top navigation bar to access different pages. 
 
 The website pages include:
 
